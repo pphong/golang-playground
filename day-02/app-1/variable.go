@@ -2,7 +2,10 @@ package main
 
 import "fmt"
 
-var varGlo = "this is global var"
+var (
+	varGlo1 = "this is global var 1"
+	varGlo2 = "this is global var 2"
+)
 
 func vars() {
 	var varVariable string = "this is variable using var"
@@ -25,5 +28,5 @@ func varsWithInt() {
 }
 
 func varsWithGlo() {
-	fmt.Println(varGlo)
+	fmt.Println(varGlo1)
 }
